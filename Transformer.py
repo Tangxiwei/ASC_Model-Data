@@ -23,7 +23,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(torch.cuda.is_available())
 
 # 读取数据
-datasets = pd.read_excel(r"D:\datasets\data1267.xlsx", header=0)  # 读你自己的文件
+datasets = pd.read_excel(r"D:\datasets\data1267.xlsx", header=0) 
 datasets.columns = ["surge", "sway", "heave", "roll", "pitch", "yaw", "fairlead"]
 
 # 数据截断和缩放
